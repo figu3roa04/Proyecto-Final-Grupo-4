@@ -9,7 +9,6 @@ body("nombre").isLength({min:3}).withMessage("El nombre debe contener minimo 3 c
 body("apellido").isLength({min:3}).withMessage("El apellido debe contener minimo 3 caracteres"), 
 body("telefono").isLength({min:8}).withMessage("Debe de tener minimo 8 caracteres"),
 body("telefono").isLength({max:8}).withMessage("Debe de tener maximo 8 caracteres"),
-body("estado_Persona").isBoolean().withMessage("El dato es de Tipo Boolean"),
 controladorPersonas.guardar);
 router.put("/modificar",
 body("nombre").isLength({min:3}).withMessage("El nombre debe contener minimo 3 caracteres"),
