@@ -19,6 +19,8 @@ login varchar(45) not null,
 correo varchar(250) not null,
 contrasena varchar(250) not null,
 estado enum('Activo', 'Inactivo', 'Bloqueado'),
+fallidos int,
+pin char(4),
 tipo enum('CL','EM'),
 primary key (id_Usuario),
 foreign key(Usuario_persona_id) references personas(id_Persona)
