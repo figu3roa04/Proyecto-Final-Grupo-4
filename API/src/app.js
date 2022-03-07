@@ -8,7 +8,7 @@ app.use(express.json());
 app.set("json spaces", 2);
 app.use("/api/", require("./rutas/rutaInicio"));
 app.use("/api/personas/", require("./rutas/rutasPersonas"));
-//app.use("/api/laboratorios/", require("./rutas/rutasLaboratorio"));
+app.use("/api/tipo/", require("./rutas/rutasTipos"));
 //app.use("/api/ingredienteactivo/", require("./rutas/rutasIngredienteActivo"));
 //app.use("/api/tipos/", require("./rutas/rutasTipos"));
 //app.use("/api/descuentos/", require("./rutas/rutasDescuentos"));
