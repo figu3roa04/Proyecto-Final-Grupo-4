@@ -14,6 +14,7 @@ app.use("/api/tipo/", require("./rutas/rutasTipos"));
 app.use("/api/usuarios/", require("./rutas/rutasUsuarios"));
 app.use("/api/autenticacion/", require("./rutas/rutasAutenticacion"));
 app.use("/api/archivos/", require("./rutas/rutasArchivos"));
+app.use("/api/productos/", require("./rutas/rutasProductos"));
 
 app.listen(4001, ()=>{
     console.log("Servidor iniciado en el puerto 4001");
