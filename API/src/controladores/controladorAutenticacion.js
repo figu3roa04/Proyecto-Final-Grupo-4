@@ -15,7 +15,7 @@ exports.recuperarContrasena = async (req, res) => {
         var buscarUsuario = await ModeloUsuario.findOne({
             where: {correo}
         });
-        const pin ="7777";
+        const pin ="8346";
         if(buscarUsuario){
             const data = {
                 correo: correo,
