@@ -64,6 +64,7 @@ exports.InicioSesion = async (req, res) =>{
         }
     }
 };
+
 exports.Error = (req, res) =>{
     msj("Debe estar autenticado", 200, [], res);
 }
